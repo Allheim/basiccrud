@@ -17,7 +17,6 @@
         <p>{{ $booking1['price'] }}</p>
     
     @endforeach
-
     <!-- egg -->
 </x-layout>
 

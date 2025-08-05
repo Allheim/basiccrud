@@ -58,7 +58,7 @@
                         <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
 
                             <a href="{{ route("index.logs") }}">Potangina</a>
-                            
+                            <a href ="{{ route('logs.create') }}"> create</a>
                             <a
                                 href="https://laravel.com/docs"
                                 id="docs-card"

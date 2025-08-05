@@ -1,13 +1,7 @@
 <x-layout>
     <h1>Logs</h1>
-    <a href ="/">Redirect </a>
-
-    <?php foreach ($bookings as $booking): ?>
-
-        <h2><?= htmlspecialchars($booking->guest_name) ?></h2>
-        <p><?= htmlspecialchars($booking->contact)?></p>
-        <p><?= htmlspecialchars($booking['price'])?></p>
-    <?php endforeach; ?>
+    
+    <a href ="{{ route("logs.create") }}">Add Booking </a>
 
 
     @foreach ($bookings as $booking1)
@@ -18,5 +12,8 @@
     
     @endforeach
     <!-- egg -->
+    
+
+
 </x-layout>
 

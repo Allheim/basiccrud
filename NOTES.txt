@@ -1,0 +1,3 @@
+@foreach($keys as $key)
+       <li>{{$key}} {{ $booking[$key] }}</li>
+@endforeach

@@ -23,7 +23,7 @@ class ValidateBookingRequest extends FormRequest
     {
         return ['guest_name'=>'required|max:100',
                 'contact'=>'required|max:255',
-                'price'=>'required|decimal:0,2'
+                'price'=>'required|decimal:0,2|between:0,999999.99'
             //
         ];
     }

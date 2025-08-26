@@ -13,11 +13,11 @@ class BookingController extends Controller
 
         // $bookings = Booking::all();
         // dd($bookings);
+        
 
 
         return view('logs.index',[
-            'bookings'=> Booking::orderBy('created_at','desc')->get()
-            
+            'bookings'=> Booking::with('guest_house')->orderBy('created_at','desc')->paginate(2)
         ]);
         
     }
